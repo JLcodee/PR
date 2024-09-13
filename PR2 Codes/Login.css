@@ -1,0 +1,98 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: roboto, arial;
+    background: linear-gradient(to right, lightpink, lightblue);
+    
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.login-container {
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+.sign-in-container {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    background: linear-gradient(to right, rgb(255, 182, 193), rgba(173, 216, 230));
+}
+.login-form {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-left: 10px;
+    margin-bottom: 13px;
+    padding-top: 30px;
+}
+
+input {
+    padding: 6px;
+    font-size: 15px;
+    border: 0;
+    box-shadow: -.21px 2px 0px rgba(0, 0, 0, 0.45);
+    margin-bottom: 15px;
+    margin-left: 0;
+    border-radius: 5px;
+    width: 300px;
+    background-color: transparent;
+    transition: box-shadow .2s;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 2px 3px rgb(0, 0, 0);
+}
+.icon {
+    margin-top: 5px;
+}
+.sign-in-btn {
+    display: block;
+    background-color: #166fe5;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 6px;
+    margin: auto;
+    margin-bottom: 7px;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+.sign-in-btn:hover {
+    opacity: .85;
+}
+.sign-in-btn:active {
+    opacity: .7;
+}
+.div-p1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.p1 {
+    display: inline-block;
+}
+.sign-up-in {
+    text-decoration: none;
+}
+.sign-up-in:hover {
+    text-decoration: underline;
+}
