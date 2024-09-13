@@ -1,44 +1,20 @@
-<?php
-
-$server_name = "localhost";
-$user_name = "root";
-$password = "";
-$dtbname = "zsnhs_portal";
-
-
-$conn = mysqli_connect($server_name,$user_name,$password,$dtbname);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());}
-$query1 = "CREATE TABLE sign_in(
-
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL PRIMARY KEY
-)";
-
-$query2 = "CREATE TABLE sign_up(
-
-    LRN VARCHAR(13) NOT NULL PRIMARY KEY,
-    firstname VARCHAR(50) NOT NULL,
-    midin VARCHAR(50) NOT NULL,
-    lastname VARCHAR(50) NOT NULL,
-    age INT(10) NOT NULL
-)";
-
-if (mysqli_query($conn,$query1)){
-    echo "TABLE sign_in is now created ";
-}
-else{
-    echo "ERROR " . $mysqli_error($conn);
-}
-
-if (mysqli_query($conn,$query2)){
-    echo "TABLE sign_in is now created ";
-}
-else{
-    echo "ERROR " . mysqli_error($conn);
-}
-mysqli_close($conn);
-
-
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-form-form">
+    <form class="signup-form" action="index.inc.php" method="POST">
+        <input type="text" name="name" placeholder= "Full Name">
+        <input type="text" name="lrn" placeholder= "LRN">
+        <input type="text" name="pwd" placeholder= "Password">
+        <input type="text" name="pwdrepeat" placeholder= "Repeat Password">
+        <button type="submit">SUBMIT</button>
+    </form>
+    </div>
+</body>
+</html>
